@@ -1,0 +1,114 @@
+.movie-btn, .tube-link{
+    display: flex;
+    margin: 0 auto 20px auto;
+    align-items: center;
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #333;
+    background-color: #000;
+    text-transform: uppercase;
+    font-size: 10px;
+    height: 30px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    width: calc(100% - 32px);
+    clear: both;
+    transition: all 0.5s;
+    padding: 3px 15px 4px 15px;
+    color: #999;
+}
+
+.movie-btn .material-icons, .tube-link .material-icons{
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    margin-right: 5px;
+    top: 0;
+}
+
+
+.modal-vid{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100vh;
+    z-index:999;
+    display:none;
+}
+.movie-box{
+    top:0px;
+    left:0px;
+    display:table;
+    width:100%;
+    height:100vh;
+    background-color:#232323;
+    background-color:rgba(0, 0, 0, 0.80);
+    color:#fff;
+    text-align:center;
+}
+
+.close.small-close{
+	position:absolute;
+    font-weight:300;
+    letter-spacing:0.125em;
+    text-transform:uppercase;
+    font-size:10px !important;
+    right:0px;
+    top:-30px;
+    color:#ccc !important;
+    cursor:pointer;
+}
+
+.wide-screen{
+    display:table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.vid-holder{
+    display:inline-block;
+    top:0px;
+    left:0px;
+    position:relative;
+    margin:0 auto;
+    -webkit-box-shadow: 0 0 10px 0 #000000;
+    box-shadow: 0 0 10px 0 #000000;
+    border-style:solid;
+    border-width:1px;
+    border-color:#333;
+}
+
+
+.standard-img, .widescreen-img, .sixteen-nine, .pal{
+    max-height:calc(100vh - 122px);
+    max-width:calc(100vw - 122px);
+    position:relative;
+    margin:0 auto;
+    /*transition: all 0.5s;*/
+    display:none ;
+}
+
+
+
+.show{
+    display:block !important;
+}
+
+.hide{
+    display:none;
+}
+
+.vid-holder video, .vid-holder iframe{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background-color:#000;
+    background-image:url(https://s3.amazonaws.com/imglibs/video_bg.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+}

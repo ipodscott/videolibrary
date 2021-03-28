@@ -1,0 +1,213 @@
+/* Force height below of Gutenberg Editor to be only 50px vs. 40vh, and force the Gutenberg block to be fullwidth */
+.wp-block, .edit-post-visual-editor, .block-editor-writing-flow__click-redirect {
+    min-height: 50px;
+    max-width: 100vw;
+    margin-bottom: 80px;
+}
+
+#editor .block-editor-writing-flow__click-redirect {
+    /* min-height: 50px; 
+    display: none;*/
+}
+
+.edit-post-visual-editor__post-title-wrapper .editor-post-title{
+   margin: 0;
+}
+
+/*.block-editor-block-list__insertion-point, .block-editor-block-list__empty-block-inserter, .block-list-appender{
+	display: none !important;
+}*/
+
+
+
+.acf-field-message.hide-label{
+	color: #333;
+	padding: 5px 20px 5px 20px !important;
+}
+
+.acf-field-message.hide-label .acf-input p{
+	margin: 0;
+	padding: 0;
+}
+
+#dashboard-widgets-wrap{
+	display: none;
+}
+
+.edit-post-layout__metaboxes .meta-box-sortables.ui-sortable .postbox-header{
+	background-color: #0073A4;
+	color: #fff;
+	transition: all 0.5s;
+}
+
+.edit-post-layout__metaboxes .meta-box-sortables.ui-sortable .postbox-header:hover{
+	background-color: #333;
+	color: #000;
+}
+
+
+.title-header{
+	background-color: #0073A4;
+}
+
+.title-header p{
+	color: #fff;
+}
+
+.edit-post-visual-editor>.block-editor__typewriter>div>.block-editor-writing-flow{
+	padding: 0 10px 0 10px;	
+}
+
+/* Force height below of Gutenberg Editor to be only 50px vs. 40vh, and force the Gutenberg block to be fullwidth */
+.wp-block, .edit-post-visual-editor, .block-editor-writing-flow__click-redirect {
+
+    max-width: calc(100vw - 20px);
+}
+
+/*Chnage The Gutenberg Editor Font. Font's also must me included in functions.php file.*/
+.block-editor-block-list__layout, .editor-post-title__block .editor-post-title__input {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+
+/* ACF Accordion Titles and Label colors */
+.acf-field.menu-title, .edit-post-meta-boxes-area #poststuff .stuffbox>h3, .edit-post-meta-boxes-area #poststuff h2.hndle, .edit-post-meta-boxes-area #poststuff h3.hndle, #editor .acf-label.acf-accordion-title { 
+	background-color: #f6f6f6;
+	padding: 5px 20px 5px 20px;
+}
+
+/* Make the entire background of Page and Post editor white  if the page content section is Dynamic*/
+.edit-post-layout .interface-interface-skeleton__content{
+	background-color: #fff;
+}
+/* Hide the higher and lower handles in ACF this can create confusion by when used by the client.*/
+.handle-order-higher, .handle-order-lower{
+	display: none;
+}
+
+/* Hide ACF Sorting Options For ACF fields attatched to a Post Type*/
+
+.postbox-header .handle-actions {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* Make attached ACF Files Title's to display cleaner and align with vertical centering */
+
+.postbox-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+
+/* Make the ACF header look like WordPress 5.5 buttons*/
+
+#editor .postbox>.inside {
+    border-bottom: 1px solid #ddd;
+}
+
+.postbox .handlediv {
+	    margin-top: 0;
+	}
+
+.edit-post-meta-boxes-area .postbox .handlediv {
+	background-color: #007cba;
+	color: #fff;
+}
+
+.toggle-indicator{
+	color: #fff;
+}
+
+#poststuff .stuffbox>h3, #poststuff h2, #poststuff h3.hndle {
+    font-size: 14px;
+    padding: 0 0 0 10px;
+    margin: 0;
+    line-height: 0 ;
+    background-color: transparent;
+}
+
+.edit-post-meta-boxes-area #poststuff h2.hndle {
+	background-color: transparent;
+}
+
+.acf-postbox .acf-hndle-cog{
+	padding: 0 10px 0 10px;
+	transition: all 0.25s;
+}
+
+.acf-postbox .acf-hndle-cog:hover{
+	padding: 0 10px 0 10px;
+	background-color: #007cba;
+	color: #fff;
+}
+
+
+/* Tweaked the Edit Field Group on the Sidebar */
+#side-sortables .handle-actions a{
+	display: flex;
+	width: 30px;
+	justify-content: center;
+    align-content: center;
+    padding: 0;
+    opacity: 0;
+}
+
+#side-sortables .handle-actions a:hover{
+	opacity: 1;
+}
+
+/* Added this to hide an ACF Label if we don't to see it. */
+.hide-label .acf-label{
+	display: none;
+}
+
+.hide-label.message-color{
+	background-color: #004867;
+	color: #fff;
+	transition: all 0.5s;
+}
+
+.hide-label.message-color:hover{
+	background-color: #0087c0;
+	color: #fff;
+	transition: all 0.5s;
+}
+
+
+
+
+
+/* This hides the logout and links to User Settings. I added this becuase kept accidentally clicking the link and going to the admin section. */
+
+.ab-top-secondary.ab-top-menu{
+	display: none;
+}
+
+/* Created a custom logout button for the sidebar attached to logged in users via ACF. */
+.logout_btn .button{
+	border:none;
+	background-color: #a00000;
+	color: #fff;
+	font-weight: 600;
+	text-align: center;
+	padding: 5px 0 5px 0;
+}
+
+.logout_btn .button:hover{
+	background-color: #ff0000;
+	color: #fff;
+	transition: all 0.5s;
+}
+
+
+
+/* Hide Comments */
+
+#menu-comments, #menu-posts{
+display: none;
+}
