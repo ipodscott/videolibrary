@@ -24,12 +24,7 @@
 	<?php wp_footer(); ?>
 	<?php include('admin-bar.php');?>	
 	<div id="pageVideo" class="page-movie"></div>
-	<?php 
-		if (is_single() || is_page() || is_post() ) {
-	
-		include( 'acf-blocks/audio_button/audio_footer.php' ); 
-		}
-	 ?>
+
 
 			 <!-- Initialize Swiper -->
   <script>

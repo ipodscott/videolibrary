@@ -314,17 +314,17 @@ h3 {
     }
     
     .is-two-columns .wp-block-column {
-	    flex: 100%;
+	    flex: 100% !important;
 	    margin-left: 0;
     }
         
     .is-three-columns .wp-block-column {
-	    flex: 100%;
+	    flex: 100% !important;
 	    margin-left: 0;
     }
     
     .is-four-columns .wp-block-column{
-	    flex: calc(50% - 20px);
+	    flex: calc(50% - 20px) !important;
 	    margin-left: 0;
     }
     
@@ -339,10 +339,6 @@ h3 {
 }
 
 @media (max-width:781px) {
-	 .is-two-columns .wp-block-column {
-	    flex: 100% !important;
-	    margin-left: 0;
-    }
         
     .is-three-columns .wp-block-column {
 	    flex: 100% !important;
@@ -878,7 +874,7 @@ ul .material-icons {
 }
 
 .acc-head.active {
-    color: #999;
+    color: #fff;
     background-color: #ccc
 }
 
@@ -968,7 +964,7 @@ ul .material-icons {
 .standard-img,
 .widescreen-img,
 .sixteen-nine,
-.pal {
+.pal-img {
     max-height: calc(100vh - 122px);
     max-width: calc(100vw - 122px);
     position: relative;
@@ -1739,6 +1735,21 @@ a{
 	height: auto;
 }
 
+.memu-buttons{
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	align-items: center;
+	justify-content: space-around;
+	width: 90px;
+	border-style: solid;
+	border-width: 0 1px 0 0;
+	border-color: #333;
+	cursor: pointer;
+}
+
 .big-menu-btn:hover, .home-btn:hover{
 	opacity: 1;
 }
@@ -1785,7 +1796,7 @@ a{
 }
 
 .right-overlay{
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.75);
 	display: flex;
 	width: 100%;
 	height: 100%;

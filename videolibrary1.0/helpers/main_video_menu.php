@@ -1,7 +1,18 @@
 <div class="main-menu page-menu" style="display: block;">
-	<div class="big-menu-btn"><i class="material-icons">menu</i></div>
-	<a href="/"><div class="home-btn"><span class="material-icons"> arrow_back </span></div></a>
-		<div class="menu-title"> <div><span class="show-page-menu"></div><div><?php the_field('main_title');?></div><div><span class="close-menu" style="display: none;"><span class="material-icons">close</span></span></div></div>
+	<div class="menu-title"> <div>
+		<span class="show-page-menu"></div>
+		<div>
+			<div class="memu-buttons">
+				<i class="material-icons show-menu">menu</i>
+				<a href="/"><span class="material-icons">chevron_left</span></a>
+			</div>
+			<?php the_field('main_title');?></div>
+		<div>
+			<span class="close-menu" style="display: none;">
+				<span class="material-icons">close</span>
+			</span>
+	</div>
+</div>
 		
 		<?php if(get_field('video_menu_builder')): ?>
 <?php while(has_sub_field('video_menu_builder')): ?>
