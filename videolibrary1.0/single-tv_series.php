@@ -14,7 +14,7 @@
 		 
 		
 
-		<div class="menu-btn"><i class="material-icons">menu</i></div>
+		<div class="menu-btn"><span class="material-icons"> chevron_left </span> </div>
 		
 		<div class="menu-overlay" style="display: block;"></div>
 		
@@ -22,35 +22,6 @@
 					
 		<?php include('admin-bar.php');?>
 		
-		 <script>
-	        function poll(poll_url, poll_timeout) {
-			
-			    setInterval( function() {
-			
-			        $.ajax({
-			        	dataType: "json",
-			        	url: poll_url,
-			        	success: function (data){
-			
-				       	if(data.modified != date_modified){
-				       		if(!date_modified){
-				       			date_modified = data.modified;
-				       		}
-				       		else{
-				       			location.reload();
-				       		}
-				       	}
-				       	
-			
-			        	}
-			        });
-			    }, poll_timeout);
-			}
-			
-			
-				var date_modified = null; poll("<?php echo site_url() ?>/wp-json/wp/v2/<?php echo $post->post_type ?>s/<?php echo $post->ID ?>", 3000);
-		
-	</script>
 
 <?php get_footer(); ?>
 	

@@ -20,7 +20,18 @@
 		
 				
 				<div class="main-menu page-menu" style="display: block;">
-		<div class="menu-title"> <div><a href="/"><span class="material-icons" style="display: none;">home</span></a><span class="show-page-menu"><span class="material-icons" style="display: none;">apps</span></span></div><div><?php the_title();?></div><div><span class="close-menu" style="display: none;"><span class="material-icons">close</span></span></div></div>
+		<div class="menu-title"> 
+			<div>
+				<div class="memu-buttons">
+				<i class="material-icons show-menu">menu</i>
+				<a href="/"><span class="material-icons">chevron_left</span></a>
+				</div>
+			</div>
+		<div>
+			<?php the_title();?>
+			</div>
+			<div><span class="close-menu" style="display: none;"><span class="material-icons">close</span></span></div>
+		</div>
 		
 		
 		
@@ -53,5 +64,5 @@
 		
 	
 
-<?php get_footer(''); ?>
+<?php get_footer(); ?>
 	

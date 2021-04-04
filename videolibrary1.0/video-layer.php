@@ -3,15 +3,14 @@
 				<div id="mainVideo" class="movie">
 					<div class="vid-box">
 						<div id="videoBox" class="vid-holder">
-								<img class="sixteen-nine-img" src="<?php bloginfo('template_directory'); ?>/img/16x9_bg.png" />
-								<img class="widescreen-img" src="<?php bloginfo('template_directory'); ?>/img/bg_widescreen.gif" />
-								<img class="pano-img" src="<?php bloginfo('template_directory'); ?>/img/pano.gif" />
-								<img class="standard-img" src="<?php bloginfo('template_directory'); ?>/img/standard_bg.png" />
-								<img class="pal-img" src="<?php bloginfo('template_directory'); ?>/img/pal.png" />
+								<img class="widescreen-img" src="<?php bloginfo('template_directory'); ?>/acf-blocks/video_button/images/bg_widescreen.gif"/>
+				                <img class="standard-img" src="<?php bloginfo('template_directory'); ?>/acf-blocks/video_button/images/standard_bg.gif"/>
+				                <img class="sixteen-nine" src="<?php bloginfo('template_directory'); ?>/acf-blocks/video_button/images/16x9_bg.png"/>
+				                <img class="pal" src="<?php bloginfo('template_directory'); ?>/acf-blocks/video_button/images/pal.png"/>
 								<img class="nat-arch" src="<?php bloginfo('template_directory'); ?>/img/na.gif" />
 								<img class="vintage-wide" src="<?php bloginfo('template_directory'); ?>/img/vintage_wide.gif" />
 								<iframe class="vidFrame" src="https://www.youtube.com/embed/DMxOk3AIAVU?rel=0&autoplay=" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>		
-								<video id="myVideo" class="myVideo" src="" controls></video>							
+								<video id="myVideo" playsinline class="myVideo" src="" controls></video>						
 						</div>
 					</div>
 				</div>

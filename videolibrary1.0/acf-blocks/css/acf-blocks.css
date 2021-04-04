@@ -376,7 +376,7 @@
 	align-items: center;
 	flex-wrap: wrap;
 	position: relative;
-	margin: 60px auto 60px auto;
+	margin: 0 auto;
 
 }
 
@@ -391,7 +391,6 @@
 
 .gallery a img{
 	max-width: 100%;
-	
 	height: auto;
 }
 

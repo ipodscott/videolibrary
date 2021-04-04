@@ -82,9 +82,8 @@ if( function_exists('acf_add_options_page') ) {
 // Custom CSS Styles
 
 function custom_admin_js() {
-
+	wp_enqueue_style( 'admin-fonts', get_template_directory_uri() . '/css/admin-fonts.css',false,'1.1','all');
     wp_enqueue_style( 'admin_styles','https://www.hazzardlabs.com/libs/wp/admin.css',true,'1.1','all');
-    wp_enqueue_style( 'admin-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Material+Icons',true,'1.1','all');
     wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/admin.js', array('jquery'), '1.0', true );
     //wp_enqueue_style( 'video', get_template_directory_uri() . '/video/video.css',true,'1.1','all');
 }

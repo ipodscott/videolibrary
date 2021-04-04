@@ -31,6 +31,7 @@ add_action( 'get_footer', 'prefix_add_acf_footer_styles' );
 				include_once 'audio_button/module.php';
 				include_once 'video_button/module.php';
 				include_once 'medium_header/module.php';
+				include_once 'gallery_block/module.php';
 			}
 		}
 		

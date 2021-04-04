@@ -35,5 +35,6 @@
 
 <?php endif ?>
 	
-	
-<span id="<?php echo esc_attr($id); ?>" class="play_audio <?php echo esc_attr($className); ?>" audiourl="<?php echo $audio; ?>"><span class="material-icons">volume_up</span><?php echo $title; ?></span>	
+<span id="<?php echo esc_attr($id); ?>" class="play_audio <?php echo esc_attr($className); ?>" audiourl="<?php echo $audio; ?>">
+	<span class="material-icons">volume_up</span><?php echo $title; ?>
+</span>	

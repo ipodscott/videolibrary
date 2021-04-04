@@ -4,42 +4,21 @@
         "title": "Audio Button",
         "fields": [
             {
-                "key": "field_605756c13e83b",
-                "label": "Block Identifier",
-                "name": "block_identifier",
-                "type": "clone",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "clone": [
-                    "group_605144619ba0f"
-                ],
-                "display": "seamless",
-                "layout": "block",
-                "prefix_label": 0,
-                "prefix_name": 0
-            },
-            {
-                "key": "field_605757af274c7",
-                "label": "Settings",
+                "key": "field_6064cf8c9af48",
+                "label": "Audio Button",
                 "name": "",
-                "type": "accordion",
+                "type": "message",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
                     "width": "",
-                    "class": "",
+                    "class": "gberg-label hide-sidebar",
                     "id": ""
                 },
-                "open": 0,
-                "multi_expand": 0,
-                "endpoint": 0
+                "message": "",
+                "new_lines": "wpautop",
+                "esc_html": 0
             },
             {
                 "key": "field_60575a1cba803",

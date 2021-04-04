@@ -9,7 +9,7 @@
                 <img class="pal" src="<?php bloginfo('template_directory'); ?>/acf-blocks/video_button/images/imglibs/pal.png"/>
                
                 <video id="myVideo" class="myVideo hide" src="" controls></video>
-                <iframe class="youTube hide" src="" frameborder="0" allowfullscreen></iframe>
+                <iframe class="youTube hide vidFrame" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
         </div>
     </div>
