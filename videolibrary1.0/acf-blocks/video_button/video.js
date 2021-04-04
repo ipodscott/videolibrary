@@ -74,7 +74,7 @@ $(document).ready(function() {
 	
 	
 	function hideAudio(){
-		$('.audio-btn.active').removeClass("show");
+		$('.audio-btn').removeClass("active");
         $('.audio_footer.show, .mini-audio-btn.show').removeClass("show");
         document.getElementById('audio').pause();
 	}
