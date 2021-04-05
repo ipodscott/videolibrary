@@ -1,7 +1,6 @@
 <?php
 	$block_folder = "gallery_block"; 
-	$block_parent = "/acf-blocks/";
-	$block_path =  $block_parent . $block_folder;
+	$block_path =  '/acf-blocks/' . $block_folder;
 	acf_register_block(array(
 	'name'				=> 'gallery_block',
 	'title'				=> __('Gallery Block'),
