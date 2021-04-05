@@ -16,8 +16,8 @@
 	<div class="home-btn"><a href="/"><span class="material-icons"> chevron_left </span></a></div>
 	
 	<?php
-	include( 'acf-blocks/video_button/video.php' ); 
-	include( 'acf-blocks/audio_button/audio_footer.php' );
+	include( 'page-video.php' ); 
+	include( 'audio_footer.php' );
 	?>
 
 

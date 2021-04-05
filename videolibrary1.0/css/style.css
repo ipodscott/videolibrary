@@ -2505,7 +2505,7 @@ form button{
 	width: calc(100% - 40px);
 	max-width: 500px;
 	opacity: 0.2;
-	padding: 15px 0 15px 0;
+	padding: 0 0 25px 0;
 }
 
 /* Main Page Navigtaion */
@@ -2696,12 +2696,12 @@ form button{
 
 .page-footer{
 	display:  block;
-	padding-top: 5px;
+	padding-top: 25px;
 	position: relative;
 	border-style: solid;
 	border-width: 1px 0 0 0;
 	border-color: #333;
 	background-color: transparent;
-	height: 90px;
+	height: auto;
 	background-color: rgba(0, 0, 0, 0.92)
 }

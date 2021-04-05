@@ -32,5 +32,5 @@
 
 
 	<div class="video-menu-link video-link <?php echo $vid_source; ?> <?php echo $resolution; ?>" vidURL="<?php echo $vid_origin; ?>">
-		<div><i class="material-icons">video_label</i> <?php the_field('slide_title');?> </div>
+		<div><i class="material-icons">video_label</i> <?php the_field('button_title');?> </div>
 	</div>

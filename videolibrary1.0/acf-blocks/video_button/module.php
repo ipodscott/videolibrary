@@ -17,18 +17,6 @@
 		]
 ));
 
-wp_enqueue_style( 'video.css', get_template_directory_uri() . $block_root. 'video.css',true,'1.1','all');
-wp_enqueue_script( 'video.js', get_template_directory_uri() . $block_root. 'video.js', array('jquery'), '1.0', true );
-
-
-// Add video button styles to the backend
-function custom_audio_admin() {
-	$block_root = "/acf-blocks/video_button/";
-	wp_enqueue_style( 'video.css', get_template_directory_uri() . $block_root. 'video.css',true,'1.1','all');
-}
-add_action('admin_footer', 'prefix_add_video_button');
-/*Import ACF Json */
-
 
 // Import ACF Json File
 $acf_json_data = locate_template($block_root.'/acf.json');
