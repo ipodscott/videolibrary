@@ -1,4 +1,4 @@
-<? 
+<?php 
 	$block_folder = "fullwidth"; 
 	$block_path =  '/acf-blocks/' . $block_folder;
 	acf_register_block(array(
@@ -15,13 +15,12 @@
 		'customClassName'	=> true,
 		'jsx' 			=> true,
 		]
-		));
+));
+
+	// Read local acf.json
+	$acf_json_data = locate_template($block_path.'/acf.json');
+	$custom_fields = $acf_json_data ? json_decode(file_get_contents($acf_json_data), true) : array();
 	
-	/*Import ACF Json */
-
-$acf_json_data = locate_template($block_path.'/acf.json');
-$custom_fields = $acf_json_data ? json_decode(file_get_contents($acf_json_data), true) : array();
-
-foreach ($custom_fields as $custom_field) {
-	acf_add_local_field_group($custom_field);
-}
+	foreach ($custom_fields as $custom_field) {
+		acf_add_local_field_group($custom_field);
+	}
