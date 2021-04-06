@@ -12,26 +12,15 @@ add_action( 'get_footer', 'prefix_add_acf_footer_styles' );
 			
 			// check function exists
 			if( function_exists('acf_register_block') ) {
-				
-				include_once 'text-area/module.php';
-				include_once 'two-columns/module.php';
-				include_once 'swiper-block/module.php';
-				include_once 'featured-swiper/module.php';	
-				include_once 'link-wells/module.php';					
-				include_once 'thumb-slider/module.php';
-				include_once 'section-heading/module.php';
-				include_once 'big-header/module.php';
-				include_once 'hype-animation/module.php';
-				include_once 'featured-video/module.php';
-				include_once 'featured-video/module.php';
-				include_once 'elementor-block/module.php';
-				include_once 'primary-content-block/module.php';
-				include_once 'column-block/module.php';
-				include_once 'column-block/module.php';
 				include_once 'audio_button/module.php';
-				include_once 'video_button/module.php';
-				include_once 'medium_header/module.php';
+				include_once 'big_header/module.php';
+				include_once 'elementor_block/module.php';
+				include_once 'fullwidth/module.php';
 				include_once 'gallery_block/module.php';
+				include_once 'large_slider/module.php';
+				include_once 'primary_content_block/module.php';				
+				include_once 'thumb_slider/module.php';
+				include_once 'video_button/module.php';
 			}
 		}
 		
